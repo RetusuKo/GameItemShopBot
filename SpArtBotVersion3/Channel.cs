@@ -19,7 +19,7 @@ namespace SpArtBotVersion3
         {
             await chanel.SendMessageAsync($"{user.Mention} Добрый  день, скоро с вами свяжеться художник, который сделает ваш арт.");
             await chanel.SendMessageAsync($"Пока вы можете отправить тут картинку арта который для вас сделает художник, подробности расскажет художник. Если есть вопросы  пишите сюда, приятного вам дня {user.Username}");
-            //await chanel.SendMessageAsync(MentionUtils.MentionRole(996424312615616542));
+            await chanel.SendMessageAsync(MentionUtils.MentionRole(996424312615616542));
         }
     }
 }
