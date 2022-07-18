@@ -24,12 +24,12 @@ namespace SpArtBotVersion3
                     if (reaction.Emote.Name == _info._payForCash.Name)
                     {
                         await _chechName.SeeName(messageString);
-                        await cashBuy.SendMessageAsync($"{user.Mention} Вы выбрали наличные ары вам надо, положить в сундук где вы поставили карту столько ар сколько стоит арт");
+                        await cashBuy.SendMessageAsync($"{user.Mention} Вы выбрали наличные ары вам надо, положить в сундук где вы поставили карту столько ар сколько стоит арт и написать сюда координаты сундука");
                     }
                     if (reaction.Emote.Name == _info._payForCard.Name)
                     {
                         await _chechName.SeeName(messageString);
-                        await cardBuy.SendMessageAsync($"{user.Mention} Вы выбрали карту вам надо, отправить столько ар сколько стоит арт на карту под номером 66610");
+                        await cardBuy.SendMessageAsync($"{user.Mention} Вы выбрали карту вам надо, отправить столько ар сколько стоит арт на карту под номером 66610 и написать сюда координаты сундука");
                     }
                 }
                 if (channel.Id == _info._onSellId)
