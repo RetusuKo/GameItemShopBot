@@ -14,6 +14,7 @@ namespace SpArtBotVersion3
             995988538011160666, //3-лишний
             995988680726556763, //пчело-чб
             998228190520676413, //Блондинка лиса
+            1000098060891861154 //Каштановая чародейка
         };
         public Task AddArtToChanel(string artName, SocketGuildUser user)
         {
@@ -33,6 +34,9 @@ namespace SpArtBotVersion3
                     break;
                 case "Блондинка лиса":
                     WriteBuyArt(4, user);
+                    break;
+                    case "Каштановая чародейка":
+                    WriteBuyArt(5, user);
                     break;
                 default:
                     Console.WriteLine("Eror");
