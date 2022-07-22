@@ -46,6 +46,13 @@ namespace SpArtBotVersion3
                         await _channel.CreateOrderChanel(user);
                     }
                 }
+                if (channel.Id == 993891758599581777)
+                {
+                    if (reaction.Emote.Name == _info._like.Name)
+                    {
+                        await user.AddRoleAsync(1000101494621745255);
+                    }
+                }
             }
         }
     }
