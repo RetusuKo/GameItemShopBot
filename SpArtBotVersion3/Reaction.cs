@@ -15,6 +15,13 @@ namespace SpArtBotVersion3
             SocketGuildUser user = (SocketGuildUser)reaction.User;
             var cardBuy = user.Guild.GetChannel(_info._cardBuyId) as IMessageChannel;
             var cashBuy = user.Guild.GetChannel(_info._cashBuyId) as IMessageChannel;
+            if (channel.Id == _info._updateID)
+            { 
+                if (reaction.Emote.Name == _info._like.Name)
+                {
+                    await user.AddRoleAsync(1000101494621745255);
+                }
+            }
             if (!user.Guild.GetUser(reaction.UserId).IsBot && channel.Id != _info._updateID)
             {
                 var msg = await message.GetOrDownloadAsync();
@@ -44,13 +51,6 @@ namespace SpArtBotVersion3
                     if (reaction.Emote.Name == _info._like.Name)
                     {
                         await _channel.CreateOrderChanel(user);
-                    }
-                }
-                if (channel.Id == 993891758599581777)
-                {
-                    if (reaction.Emote.Name == _info._like.Name)
-                    {
-                        await user.AddRoleAsync(1000101494621745255);
                     }
                 }
             }
