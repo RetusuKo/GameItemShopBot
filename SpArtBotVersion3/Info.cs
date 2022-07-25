@@ -20,7 +20,7 @@ namespace SpArtBotVersion3
         public readonly ulong _onSellId = 987627294736666694;
         public readonly ulong _privteSell = 993411306029850644;
         public readonly ulong _updateID = 993891758599581777;
-        public readonly ulong _cardBuyId = 993945840710328350;
+        public readonly ulong _cardBuyId = 1001210387619905646;
         public readonly ulong _cashBuyId = 993945867935568013;
         public readonly ulong _artToOrderCaategory = 996128086632448011;
 
